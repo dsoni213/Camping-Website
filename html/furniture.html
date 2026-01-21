@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/offersAndPackages.css" />
+    
+
+</head>
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-hiking"></i> Soni Camping Equipment  </a>
+
+    <nav class="navbar">
+        <a href="homePage.html">home</a>
+        <a href="campingEquipments.html">camping equip</a>
+        <a href="furniture.html">Furniture</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="offersAndPackages.html">Offer&Pack</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div id="cart-btn"><a href="basket.html" class="fas fa-shopping-cart">-</a></div>
+        <div class="fas fa-user" id="login-btn"></div>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+</header>
+
+<!-- header section ends -->
+
+
+<div class="catalog">
+  <div class="item" onclick="openPage('campingChairs.html')">
+      <object data="/image/c_chair.webp" type="image/jpeg" height="160px" width="160px"></object>
+      <h2>Camping Chairs</h2>
+  </div>
+  <div class="item" onclick="openPage('campingTable.html')">
+      <object data="/image/c_table.jpeg" type="image/jpeg" height="160px" width="160px"></object>
+      <h2>Camping Tables</h2>
+  </div>
+  <div class="item" onclick="openPage('beds.html')">
+      <object data="/image/f_beds.webp" type="image/jpeg" height="160px" width="160px"></object>
+      <h2>Beds</h2>
+  </div>
+  <div class="item" onclick="openPage('hammocks.html')">
+      <object data="/image/f_hammock.jpeg" type="image/jpeg" height="160px" width="160px"></object>
+      <h2>Hammocks</h2>
+  </div>
+
+  </div>
+  <!-- Add more items here -->
+</div>
+
+
+<br><br>
+
+
+
+<section class="footer">
+    <div class="box-container">
+      <div class="box">
+        <h3><i class="fas fa-hiking"></i> Soni Camping Company</h3>
+        <p>
+          Hello my name is Dhruvin Soni. I made this website for assignment
+          only, I hope you all enjoy this project.
+        </p>
+        <div class="share">
+          <a href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569891%7Cb%7Csign%20in%20to%20facebook%7C&placement=&creative=589460569891&keyword=sign%20in%20to%20facebook&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696221832%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-11079269337%26loc_physical_ms%3D1007785%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwhL6pBhDjARIsAGx8D58bWXqVBY1JVLLs__zD6Rc8N_sCujmr_rxO2UUhaKeoWCfpidqjmrMaAuznEALw_wcB" class="fab fa-facebook-f">.</a>
+          <a href="https://twitter.com/login" class="fab fa-twitter">.</a>
+          <a href="https://www.instagram.com/" class="fab fa-instagram">.</a>
+          <a href="https://www.linkedin.com/feed/" class="fab fa-linkedin">.</a>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>contact info</h3>
+        <a href="#" class="links">
+          <i class="fas fa-phone"></i> +91 9182736455
+        </a>
+        <a href="#" class="links">
+          <i class="fas fa-phone"></i> +91 9911880234
+        </a>
+        <a href="#" class="links">
+          <i class="fas fa-envelope"></i> soni.camping@gmail.com
+        </a>
+        <a href="#" class="links">
+          <i class="fas fa-map-marker-alt"></i> Wadala, india - 400004
+        </a>
+      </div>
+
+      <div class="box">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.960789446542!2d72.8676344247466!3d19.021449403683764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfdb3592ae71%3A0x24a513f82882be61!2sVidyalankar%20institute%20of%20technology!5e0!3m2!1sen!2sin!4v1694836812488!5m2!1sen!2sin"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+      </div>
+
+      <div class="box">
+        <h3>newsletter</h3>
+        <p>subscribe for latest updates</p>
+        <input type="email" placeholder="your email" class="email" />
+        <input type="submit" value="subscribe" class="btn" />
+        <img src="image/payment.png" class="payment-img" alt="" />
+      </div>
+    </div>
+
+    <div class="credit">
+      created by <span> Dhruvin </span> | all rights reserved
+    </div>
+  </section>
+
+  <script>
+    $(document).ready(function() {
+        // Initialize the Isotope catalog
+        $('.catalog').isotope({
+            itemSelector: '.item',
+            layoutMode: 'fitRows'
+        });
+    });
+
+    function openPage(pageUrl)
+    {
+       window.open(pageUrl)
+    }
+</script>
+
+</body>
+</html>

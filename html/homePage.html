@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camping Project</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="fas fa-hiking"></i> Soni Camping Equipment
+      </a>
+
+      <div class="navbar">
+        <a href="homePage.html">home</a>
+        <a href="campingEquipments.html">camping equip</a>
+        <a href="furniture.html">Furniture</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="offersAndPackages.html">Offer&Pack</a>
+      </div>
+
+      <div class="icons">
+        <div class="fa fa-search" id="search-btn"></div>
+        <div id="cart-btn">
+          <a href="basket.html" class="fas fa-shopping-cart">-</a>
+        </div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="search-box" class="fa fa-search"></label>
+      </form>
+    </header>
+
+    <!-- header section ends -->
+
+    <!-- Slide Show starts  -->
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="/image/slide_1.jpg" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="/image/slide3.avif" style="width: 100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="/image/slide4.jpg" style="width: 100%" />
+      </div>
+    </div>
+    <br />
+
+    <div style="text-align: center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+
+    <script>
+      let slideIndex = 0;
+      showSlides();
+
+      function showSlides() {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+    <!-- Slide Show  ends -->
+
+    <!-- features section starts  -->
+
+    <section class="features" id="features">
+      <h1 class="heading">our <span>features</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="/image/feature-img-1.png" alt="" />
+          <h3>best quality</h3>
+          <p>Get yourself the best thing at cheap rates.</p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="/image/feature-img-2.png" alt="" />
+          <h3>free delivery</h3>
+          <p>We always do fast delivery on our customers.</p>
+          <a href="#" class="btn">read more</a>
+        </div>
+
+        <div class="box">
+          <img src="/image/feature-img-3.png" alt="" />
+          <h3>easy payments</h3>
+          <p>It is very easy to pay on our website, you can pay easily.</p>
+          <a href="#" class="btn">read more</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- features section ends -->
+
+    <!-- products section starts  -->
+
+    <section class="features" id="features">
+      <h1 class="heading">our <span>offers</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <img src="/image/c_tents2.webp" alt="" />
+          <h3>Tents</h3>
+          <p>Get yourself the best thing at cheap rates.</p>
+          <span class="strike">Price:$84.99$</span>
+          <p>Offer Price:$49.99</p>
+          <a href="#" class="btn">Shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="/image/c_bagpacks3.jpg" alt="" />
+          <h3>BagPack</h3>
+          <p>Get yourself the best thing at cheap rates.</p>
+          <span class="strike">Price:$44.99$</span>
+          <p>Offer Price:$29.99</p>
+          <a href="#" class="btn">Shop now</a>
+        </div>
+
+        <div class="box">
+          <img src="/image/hammock3.jpg" alt="" />
+          <h3>Hammock</h3>
+          <p>Get yourself the best thing at cheap rates.</p>
+          <span class="strike">Price:$104.99$</span>
+          <p>Offer Price:$79.99</p>
+          <a href="#" class="btn">Shop now</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- products section ends -->
+
+    <!-- review section starts  -->
+
+    <section class="features" id="features">
+      <h1 class="heading">our <span>reviews</span></h1>
+
+      <div class="box-container">
+        <div class="box">
+          <h3>Juliyana</h3>
+          <p>
+            Very good website. All the stuff on this website is absolutely
+            great. You all can buy your stuff from here.
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>John</h3>
+          <p>
+            Very good website. All the stuff on this website is absolutely
+            great. You all can buy your stuff from here.
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>Eva Adams</h3>
+          <p>
+            Very good website. All the stuff on this website is absolutely
+            great. You all can buy your stuff from here.
+          </p>
+          <div class="stars">
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- review section ends -->
+
+    <!-- footer section starts  -->
+
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3><i class="fas fa-hiking"></i> Soni Camping Company</h3>
+          <p>
+            Hello my name is Dhruvin Soni. I made this website for assignment
+            only, I hope you all enjoy this project.
+          </p>
+          <div class="share">
+            <a
+              href="https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C589460569891%7Cb%7Csign%20in%20to%20facebook%7C&placement=&creative=589460569891&keyword=sign%20in%20to%20facebook&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696221832%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-11079269337%26loc_physical_ms%3D1007785%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gclid=Cj0KCQjwhL6pBhDjARIsAGx8D58bWXqVBY1JVLLs__zD6Rc8N_sCujmr_rxO2UUhaKeoWCfpidqjmrMaAuznEALw_wcB"
+              class="fab fa-facebook-f"
+              >.</a
+            >
+            <a href="https://twitter.com/login" class="fab fa-twitter">.</a>
+            <a href="https://www.instagram.com/" class="fab fa-instagram">.</a>
+            <a href="https://www.linkedin.com/feed/" class="fab fa-linkedin"
+              >.</a
+            >
+          </div>
+        </div>
+
+        <div class="box">
+          <h3>contact info</h3>
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +91 9182736455
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-phone"></i> +91 9911880234
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-envelope"></i> soni.camping@gmail.com
+          </a>
+          <a href="#" class="links">
+            <i class="fas fa-map-marker-alt"></i> Wadala, india - 400004
+          </a>
+        </div>
+
+        <div class="box">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.960789446542!2d72.8676344247466!3d19.021449403683764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7cfdb3592ae71%3A0x24a513f82882be61!2sVidyalankar%20institute%20of%20technology!5e0!3m2!1sen!2sin!4v1694836812488!5m2!1sen!2sin"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+
+        <div class="box">
+          <h3>newsletter</h3>
+          <p>subscribe for latest updates</p>
+          <input type="email" placeholder="your email" class="email" />
+          <input type="submit" value="subscribe" class="btn" />
+          <img src="image/payment.png" class="payment-img" alt="" />
+        </div>
+      </div>
+
+      <div class="credit">
+        created by <span> Dhruvin </span> | all rights reserved
+      </div>
+    </section>
+
+    <!-- footer section ends -->
+
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+    <!-- custom js file link  -->
+    <script src="/js/search.js"></script>
+  </body>
+</html>

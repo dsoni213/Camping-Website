@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Camping Project</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+
+    <!-- font awesome cdn link  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <script src="/js/cart.js"></script>
+  </head>
+  <body>
+    <!-- header section starts  -->
+
+    <header class="header">
+      <a href="#" class="logo">
+        <i class="fas fa-hiking"></i> Soni Camping Equipment
+      </a>
+
+      <div class="navbar">
+        <a href="homePage.html">home</a>
+        <a href="campingEquipments.html">camping equip</a>
+        <a href="furniture.html">Furniture</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="offersAndPackages.html">Offer&Pack</a>
+      </div>
+
+      <div class="icons">
+        <div class="fas fa-search" id="search-btn"></div>
+        <div id="cart-btn">
+          <a href="basket.html" class="fas fa-shopping-cart">-</a>
+        </div>
+        <div class="fas fa-user" id="login-btn"></div>
+      </div>
+
+      <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    </header>
+</head>
+<body>
+    <ul id="cart-items"></ul>
+
+    <button onclick="clearCart()">Clear Cart</button>
+
+    <script>
+        // Retrieve the cart items and display them on the "Basket" page
+        const cart = shoppingCart.getItems();
+        const cartItemsElement = document.getElementById('cart-items');
+
+        cart.forEach((item, index) => {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `${item.name} - $${item.price} <button onclick="removeFromCart(${index})">Remove</button>`;
+            cartItemsElement.appendChild(listItem);
+        });
+
+        function removeFromCart(index) {
+            shoppingCart.removeItem(index);
+            location.reload(); // Refresh the page to update the cart display
+        }
+
+        function clearCart() {
+            shoppingCart.clearCart();
+            location.reload(); // Refresh the page to update the cart display
+        }
+    </script>
+</body>
+</html>

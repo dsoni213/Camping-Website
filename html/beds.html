@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beds</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/offersAndPackages.css" />
+    <script src="/js/cart.js"></script>
+</head> 
+<body>
+
+<!-- header section starts  -->
+
+<header class="header">
+
+    <a href="#" class="logo"> <i class="fas fa-hiking"></i> Soni Camping Equipment  </a>
+
+    <nav class="navbar">
+        <a href="homePage.html">home</a>
+        <a href="campingEquipments.html">camping equip</a>
+        <a href="furniture.html">Furniture</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="offersAndPackages.html">Offer&Pack</a>
+    </nav>
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div id="cart-btn"><a href="basket.html" class="fas fa-shopping-cart"></a></div>
+
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+</header>
+
+<!-- header section ends -->
+
+    <section class="categories" id="categories">
+
+        <h1 class="heading">product<span>categories</span> </h1>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <img src="/image/bed1.avif" alt="">
+                <h3>Bed 1</h3>
+                <p>$144.99</p>
+                <button onclick="addToCart('Bed 1', 144.99)" class="btn">shop now</button>
+            </div>
+    
+            <div class="box">
+                <img src="/image/bed2.avif" alt="">
+                <h3>Bed 2</h3>
+                <p>$240.99</p>
+                <button onclick="addToCart('bed 2', 240.99)" class="btn">shop now</button>
+            </div>
+    
+            <div class="box">
+                <img src="/image/bed3.avif" alt="">
+                <h3>Bed 3</h3>
+                <p>$350.00</p>
+                <button onclick="addToCart('Bed 3', 350.00)" class="btn">shop now</button>
+            </div>
+    
+            <div class="box">
+                <img src="/image/bed4.jpeg" alt="">
+                <h3>Bed 4</h3>
+                <p>$199.95</p>
+                <button onclick="addToCart('Bed 4', 199.95)" class="btn">shop now</button>
+            </div>
+    
+            <div class="box">
+                <img src="/image/bed5.jpg" alt="">
+                <h3>Bed 5</h3>
+                <p>$184.99</p>
+                <button onclick="addToCart('Bed 5', 184.99)" class="btn">shop now</button>
+            </div>
+    
+            <div class="box">
+                <img src="/image/bed6.jpeg" alt="">
+                <h3>Bed 6</h3>
+                <p>$200.00</p>
+                <button onclick="addToCart('Bed 6', 200.00)" class="btn">shop now</button>
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <script>
+        // Define addToCart function here (it should match the one in shopping-cart.js)
+        function addToCart(itemName, itemPrice) {
+            shoppingCart.addItem(itemName, itemPrice);
+        }
+    </script>
+</body>
+</html>
